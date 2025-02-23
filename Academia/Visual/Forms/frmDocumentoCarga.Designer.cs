@@ -45,6 +45,7 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewtextboxEjercicioalbaran = new sage.ew.objetos.ewtextbox();
             this.btOpciones = new sage.ew.objetos.ewbutton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_albaran = new sage.ew.objetos.ewbutton();
             this.btBrowDocumentoCarga1 = new sage.addons.Academia.Visual.UserControls.btBrowDocumentoCarga();
             this.txtProfesores = new sage.addons.Academia.Visual.UserControls.txtprofesores();
             this.txtCursos = new sage.addons.Academia.Visual.UserControls.txtcursos();
@@ -101,6 +102,7 @@ namespace sage.addons.Academia.Visual.Forms
             // 
             // ewPanelContenido
             // 
+            this.ewPanelContenido.Controls.Add(this.btn_albaran);
             this.ewPanelContenido.Controls.Add(this.groupBox1);
             this.ewPanelContenido.Controls.Add(this.ewlabelNumero);
             this.ewPanelContenido.Controls.Add(this.ewtextboxNumero);
@@ -129,6 +131,7 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewPanelContenido.Controls.SetChildIndex(this.txtFecha, 0);
             this.ewPanelContenido.Controls.SetChildIndex(this.lbEnUso, 0);
             this.ewPanelContenido.Controls.SetChildIndex(this.groupBox1, 0);
+            this.ewPanelContenido.Controls.SetChildIndex(this.btn_albaran, 0);
             // 
             // lbEnUso
             // 
@@ -462,6 +465,23 @@ namespace sage.addons.Academia.Visual.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Albarán";
             // 
+            // btn_albaran
+            // 
+            this.btn_albaran._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
+            this.btn_albaran._PropiedadesDeEstilos._ColorUnderlineEntering = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(192)))), ((int)(((byte)(163)))));
+            this.btn_albaran._PropiedadesDeEstilos._ColorUnderlineSelected = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(0)))));
+            this.btn_albaran._Tooltip = "";
+            this.btn_albaran.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_albaran.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.btn_albaran.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_albaran.Location = new System.Drawing.Point(626, 73);
+            this.btn_albaran.Name = "btn_albaran";
+            this.btn_albaran.Size = new System.Drawing.Size(313, 41);
+            this.btn_albaran.TabIndex = 82;
+            this.btn_albaran.Text = "Ver / Generar albarán";
+            this.btn_albaran.UseVisualStyleBackColor = false;
+            this.btn_albaran.Click += new System.EventHandler(this.btn_albaran_Click);
+            // 
             // btBrowDocumentoCarga1
             // 
             this.btBrowDocumentoCarga1._AbrirConTeclaF4 = true;
@@ -595,5 +615,6 @@ namespace sage.addons.Academia.Visual.Forms
 
 		private sage.ew.objetos.ewbutton btOpciones;
         private System.Windows.Forms.GroupBox groupBox1;
+        private ew.objetos.ewbutton btn_albaran;
     }
 }

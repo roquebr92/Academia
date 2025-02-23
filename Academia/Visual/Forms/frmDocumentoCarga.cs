@@ -9,13 +9,23 @@ using System.Windows.Forms;
 
 using sage.ew.formul.Forms;
 using sage.ew.formul;
+using sage.ew.db;
+using sage.ew.global;
+using sage.ew.docventatpv;
+using sage.ew.cliente;
+using Sage.ES.S50.NuevoEjercicio.Clases;
+using sage.ew.functions;
+using sage.ew.listados.Clases;
 
 
 namespace sage.addons.Academia.Visual.Forms
 {
     public partial class frmDocumentoCarga : FormBaseDocumento
     {
-		/// <summary>
+        private string _empresa = EW_GLOBAL._GetVariable("wc_empresa").ToString();
+        private string _ejercicio = EW_GLOBAL._GetVariable("wc_any").ToString();
+
+        /// <summary>
         /// Clase de negocio del documento
         /// </summary>
         public dynamic Documento
@@ -325,6 +335,82 @@ namespace sage.addons.Academia.Visual.Forms
         private void btOpciones_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_albaran_Click(object sender, EventArgs e)
+        {
+            //Leemos todos los datos de este documento y creamos albaran de venta para el cliente
+            string empresa = this._cEmpresa;
+            string tarifaPredet = EW_GLOBAL._GetVariable("wc_tarifapret").ToString();
+            string seriPredet = EW_GLOBAL._GetVariable("wc_letra").ToString();
+             //fopa = EW_GLOBAL._GetVariable("wc_fopa").ToString();
+
+            if (!string.IsNullOrEmpty(ewtextboxNumeroalbaran.Text))
+            {
+                //mostramos
+                Listados oListado = new Listados();
+                oListado._Navegar(Listados.Pantalla.AlbaVen, new List<string> { { empresa }, { ewtextboxNumeroalbaran.Text }, { ewtextboxSerie.Text } });
+
+            }
+            else
+            {
+                //creamos  el albaran 
+                string fopa = string.Empty;
+                Cliente ocliente = new Cliente(txtCliente._Codigo);
+                fopa = ocliente._FormaPago;
+
+                if (string.IsNullOrEmpty(fopa))
+                {
+                    fopa = EW_GLOBAL._GetVariable("wc_fopa").ToString();
+                }
+                string cliente = txtCliente._Codigo;
+
+                DataTable dt_detalle = new DataTable();
+                string sql = $@"SELECT horas FROM {DB.SQLDatabase("Academia", "c_doccarga")}
+               WHERE numero = {DB.SQLString(ewtextboxNumero.Text)}
+               and empresa = {DB.SQLString(_empresa)}
+               and ejercicio = {DB.SQLString(_ejercicio)}";
+                bool ok = DB.SQLExec(sql, ref dt_detalle);
+                if (ok && dt_detalle.Rows.Count > 0)
+                {
+                    //Creamos el albaran 
+                    ewDocVentaTPV oCabecera = new ewDocVentaTPV();
+                    oCabecera._New(_empresa);
+                    oCabecera._Cabecera._Cliente = cliente;
+                    //oCabecera._Cabecera._Vendedor = Vendedor;
+                    oCabecera._Cabecera._Tarifa = tarifaPredet;
+                    oCabecera._Cabecera._FormaPago = fopa;
+
+                    //recorremos el detalle 
+                    for (int i = 0; i < dt_detalle.Rows.Count; i++)
+                    {
+                        ewDocVentaLinTPV oLinea = oCabecera._AddLinea();
+                        oLinea._Unidades = Convert.ToDecimal(dt_detalle.Rows[i]["horas"]);
+                        oLinea._Save();
+                    }
+                    ok = oCabecera._Save();
+
+                    if (ok)
+                    {
+                        FUNCTIONS._MessageBox("Albaran creado correctamente");
+                        ewtextboxNumeroalbaran.Text = oCabecera._Numero;
+                        ewtextboxSerie.Text = oCabecera._Letra;
+                        ewtextboxEjercicioalbaran.Text = oCabecera._Cabecera._Ejercicio;
+                        //this.Documento._Albaran = oCabecera._Numero;
+                        this.Documento._Serie = oCabecera._Letra;
+                        this.Documento._Ejercicioalbaran = oCabecera._Cabecera._Ejercicio;
+
+
+
+
+
+                    }
+
+                }
+
+            }
+
+         
         }
     }
 }
