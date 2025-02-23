@@ -1,0 +1,68 @@
+<ModMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ModManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Nombre>PROFESORES</Nombre>
+  <NombreTabla>prof_curso</NombreTabla>
+  <Titulo>PROFESORES</Titulo>
+  <TextoMenu>Menú prof_curso</TextoMenu>
+</ModManteProperties>
+</ModMantePropertiesBloc>
+<ewCampoTRelAddonsBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfEwCampoTRelAddons xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ewCampoTRelAddons>
+    <_Nombre>PROFESOR</_Nombre>
+    <_Titulo>PROFESOR</_Titulo>
+    <_Visible>false</_Visible>
+    <_Relleno>32</_Relleno>
+    <_AnchoColumna>7</_AnchoColumna>
+    <EsClave>true</EsClave>
+    <EsFiltro>true</EsFiltro>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>CLAVELINEA</_Nombre>
+    <_Titulo>CLAVELINEA</_Titulo>
+    <_Visible>false</_Visible>
+    <_Relleno>32</_Relleno>
+    <_TipoColumna>Entero</_TipoColumna>
+    <_AnchoColumna>7</_AnchoColumna>
+    <EsClave>true</EsClave>
+    <EsCampoLinea>true</EsCampoLinea>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>CURSO</_Nombre>
+    <_Titulo>Curso</_Titulo>
+    <_CampoTabla>CURSO</_CampoTabla>
+    <_Relleno>32</_Relleno>
+    <_Validar_Dato_BaseDatos>ACADEMIA</_Validar_Dato_BaseDatos>
+    <_Validar_Dato_Tabla>cursos</_Validar_Dato_Tabla>
+    <_Validar_Dato_Clave>CODIGO</_Validar_Dato_Clave>
+    <_Validar_Dato_Campos>NOMBRE</_Validar_Dato_Campos>
+    <_Validar_Dato_CampoTRel_Asignar>DEFINICION</_Validar_Dato_CampoTRel_Asignar>
+    <_Validar_Asignar_Cargando>true</_Validar_Asignar_Cargando>
+    <_AnchoColumna>7</_AnchoColumna>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>DEFINICION</_Nombre>
+    <_Titulo>Definicion</_Titulo>
+    <_Updatable>false</_Updatable>
+    <_Editable>false</_Editable>
+    <_Relleno>32</_Relleno>
+    <_AnchoColumna>7</_AnchoColumna>
+    <CampoAgregado>true</CampoAgregado>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>FECHA</_Nombre>
+    <_Titulo>Fecha</_Titulo>
+    <_Relleno>32</_Relleno>
+    <_TipoColumna>Fecha</_TipoColumna>
+    <_AnchoColumna>7</_AnchoColumna>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>NOTAS</_Nombre>
+    <_Titulo>Notas</_Titulo>
+    <_Relleno>32</_Relleno>
+    <_AnchoColumna>7</_AnchoColumna>
+  </ewCampoTRelAddons>
+</ArrayOfEwCampoTRelAddons>
+</ewCampoTRelAddonsBloc>

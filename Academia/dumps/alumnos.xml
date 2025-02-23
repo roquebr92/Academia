@@ -1,0 +1,76 @@
+<MantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Nombre>alumnos</Nombre>
+  <Titulo>Mantenimiento de alumnos</Titulo>
+  <TextoMenu>alumnos</TextoMenu>
+</ManteProperties>
+</MantePropertiesBloc>
+<PaginaMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfPaginaManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PaginaManteProperties>
+    <Nombre>tpGeneral</Nombre>
+    <Titulo>Detalles</Titulo>
+  </PaginaManteProperties>
+</ArrayOfPaginaManteProperties>
+</PaginaMantePropertiesBloc>
+<CodigoNombreMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfCodigoNombreManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CodigoNombreManteProperties>
+    <Nombre>CODIGO</Nombre>
+    <TituloCampo>Código</TituloCampo>
+  </CodigoNombreManteProperties>
+  <CodigoNombreManteProperties>
+    <Nombre>NOMBRE</Nombre>
+    <TituloCampo>Nombre</TituloCampo>
+  </CodigoNombreManteProperties>
+</ArrayOfCodigoNombreManteProperties>
+</CodigoNombreMantePropertiesBloc>
+<ObjectsMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfObjectsManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectsManteProperties>
+    <Nombre>NIF</Nombre>
+    <Visible>true</Visible>
+    <Top>16</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <TituloCampo>N.I.F.</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>DIRECCION</Nombre>
+    <Visible>true</Visible>
+    <Top>46</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <TituloCampo>Dirección</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>TELEFONO</Nombre>
+    <Visible>true</Visible>
+    <Top>76</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <TituloCampo>Teléfono</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>FECHANACIMIENTO</Nombre>
+    <Visible>true</Visible>
+    <Top>106</Top>
+    <Left>20</Left>
+    <ControlLeft>127</ControlLeft>
+    <ObjectType>DateTimePicker</ObjectType>
+    <TituloCampo>Fecha Nacimiento</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>OBSERVACIONES</Nombre>
+    <Visible>true</Visible>
+    <Top>136</Top>
+    <Left>20</Left>
+    <ControlLeft>110</ControlLeft>
+    <TituloCampo>Observaciones</TituloCampo>
+  </ObjectsManteProperties>
+</ArrayOfObjectsManteProperties>
+</ObjectsMantePropertiesBloc>

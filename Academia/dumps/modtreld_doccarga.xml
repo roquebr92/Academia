@@ -1,0 +1,79 @@
+<ModMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ModManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Nombre>d_doccarga</Nombre>
+  <NombreTabla>d_doccarga</NombreTabla>
+  <Titulo>d_doccarga</Titulo>
+  <TextoMenu>Menú d_doccarga</TextoMenu>
+</ModManteProperties>
+</ModMantePropertiesBloc>
+<ewCampoTRelAddonsBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfEwCampoTRelAddons xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ewCampoTRelAddons>
+    <_Nombre>EJERCICIO</_Nombre>
+    <_Titulo>EJERCICIO</_Titulo>
+    <_Visible>false</_Visible>
+    <_Relleno>32</_Relleno>
+    <_AnchoColumna>7</_AnchoColumna>
+    <EsClave>true</EsClave>
+    <EsFiltro>true</EsFiltro>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>EMPRESA</_Nombre>
+    <_Titulo>EMPRESA</_Titulo>
+    <_Visible>false</_Visible>
+    <_Relleno>32</_Relleno>
+    <_AnchoColumna>7</_AnchoColumna>
+    <EsClave>true</EsClave>
+    <EsFiltro>true</EsFiltro>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>NUMERO</_Nombre>
+    <_Titulo>NUMERO</_Titulo>
+    <_Visible>false</_Visible>
+    <_Relleno>32</_Relleno>
+    <_AnchoColumna>7</_AnchoColumna>
+    <EsClave>true</EsClave>
+    <EsFiltro>true</EsFiltro>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>LINEA</_Nombre>
+    <_Titulo>LINEA</_Titulo>
+    <_Visible>false</_Visible>
+    <_Relleno>32</_Relleno>
+    <_TipoColumna>Entero</_TipoColumna>
+    <_AnchoColumna>7</_AnchoColumna>
+    <EsClave>true</EsClave>
+    <EsCampoLinea>true</EsCampoLinea>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>ALUMNOS</_Nombre>
+    <_Titulo>Alumnos</_Titulo>
+    <_CampoTabla>ALUMNOS</_CampoTabla>
+    <_Relleno>32</_Relleno>
+    <_Validar_Dato_BaseDatos>ACADEMIA</_Validar_Dato_BaseDatos>
+    <_Validar_Dato_Tabla>alumnos</_Validar_Dato_Tabla>
+    <_Validar_Dato_Clave>CODIGO</_Validar_Dato_Clave>
+    <_Validar_Dato_Campos>NOMBRE</_Validar_Dato_Campos>
+    <_Validar_Dato_CampoTRel_Asignar>Nombreal</_Validar_Dato_CampoTRel_Asignar>
+    <_Validar_Asignar_Cargando>true</_Validar_Asignar_Cargando>
+    <_AnchoColumna>7</_AnchoColumna>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>Nombreal</_Nombre>
+    <_Titulo>Nombre</_Titulo>
+    <_Updatable>false</_Updatable>
+    <_Editable>false</_Editable>
+    <_Relleno>32</_Relleno>
+    <_AnchoColumna>20</_AnchoColumna>
+    <CampoAgregado>true</CampoAgregado>
+  </ewCampoTRelAddons>
+  <ewCampoTRelAddons>
+    <_Nombre>NIF</_Nombre>
+    <_Titulo>N.I.F.</_Titulo>
+    <_Relleno>32</_Relleno>
+    <_AnchoColumna>12</_AnchoColumna>
+  </ewCampoTRelAddons>
+</ArrayOfEwCampoTRelAddons>
+</ewCampoTRelAddonsBloc>

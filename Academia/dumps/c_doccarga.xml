@@ -1,0 +1,145 @@
+<MantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Nombre>c_doccarga</Nombre>
+  <Titulo>Mantenimiento de c_doccarga</Titulo>
+  <TextoMenu>Documento c_doccarga</TextoMenu>
+</ManteProperties>
+</MantePropertiesBloc>
+<PaginaMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfPaginaManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PaginaManteProperties>
+    <Nombre>tpGeneral</Nombre>
+    <Titulo>Detalles</Titulo>
+  </PaginaManteProperties>
+</ArrayOfPaginaManteProperties>
+</PaginaMantePropertiesBloc>
+<CodigoNombreMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfCodigoNombreManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CodigoNombreManteProperties>
+    <Nombre>CODIGO</Nombre>
+    <TituloCampo>Código</TituloCampo>
+  </CodigoNombreManteProperties>
+  <CodigoNombreManteProperties>
+    <Nombre>NOMBRE</Nombre>
+    <TituloCampo>Nombre</TituloCampo>
+  </CodigoNombreManteProperties>
+</ArrayOfCodigoNombreManteProperties>
+</CodigoNombreMantePropertiesBloc>
+<ObjectsMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfObjectsManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectsManteProperties>
+    <Nombre>EJERCICIO</Nombre>
+    <Tab>0</Tab>
+    <Top>16</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <TituloCampo>EJERCICIO</TituloCampo>
+    <EsFiltro>true</EsFiltro>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>EMPRESA</Nombre>
+    <Tab>0</Tab>
+    <Top>16</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <TituloCampo>EMPRESA</TituloCampo>
+    <EsFiltro>true</EsFiltro>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>NUMERO</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <Top>16</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <TituloCampo>Número</TituloCampo>
+    <EsFiltro>true</EsFiltro>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>FECHA</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <Top>46</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <ObjectType>DateTimePicker</ObjectType>
+    <TituloCampo>Fecha</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>CLIENTE</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <Top>76</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <ObjectType>TxtCodLabel</ObjectType>
+    <TxtCodLabel>sage.ew.txtbox.UserControls.txtCliente</TxtCodLabel>
+    <TituloCampo>Cliente</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>PROFESORES</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <Top>106</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <ObjectType>TxtCodLabel</ObjectType>
+    <TxtCodLabel>sage.addons.Academia.Visual.UserControls.txtprofesores</TxtCodLabel>
+    <TituloCampo>Profesores</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>CURSOS</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <Top>136</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <ObjectType>TxtCodLabel</ObjectType>
+    <TxtCodLabel>sage.addons.Academia.Visual.UserControls.txtcursos</TxtCodLabel>
+    <TituloCampo>Cursos</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>HORAS</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <NumericUpDownDecimals>6</NumericUpDownDecimals>
+    <NumericUpDownMaximum>999999999</NumericUpDownMaximum>
+    <Top>166</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <ObjectType>NumericUpDown</ObjectType>
+    <TituloCampo>Horas</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>NUMEROALBARAN</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <Top>196</Top>
+    <Left>20</Left>
+    <ControlLeft>121</ControlLeft>
+    <TituloCampo>Número Albarán</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>SERIE</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <Top>226</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <TituloCampo>Serie</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>EJERCICIOALBARAN</Nombre>
+    <Visible>true</Visible>
+    <Tab>0</Tab>
+    <Top>256</Top>
+    <Left>20</Left>
+    <ControlLeft>121</ControlLeft>
+    <TituloCampo>Ejercicio Albarán</TituloCampo>
+  </ObjectsManteProperties>
+</ArrayOfObjectsManteProperties>
+</ObjectsMantePropertiesBloc>

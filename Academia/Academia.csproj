@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF6B1B15-5EDC-42CC-BAB4-6EAF0DD256D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>sage.addons.Academia</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Librerias\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Librerias\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>sage.addons.Academia</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="sage.50, Version=50.7830.0.0, Culture=neutral, PublicKeyToken=96ae376547cf7c42, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\librerias\sage.50.exe</HintPath>
+    </Reference>
+    <Reference Include="sage.ew.db">
+      <HintPath>sage.ew.db.dll</HintPath>
+    </Reference>
+    <Reference Include="sage.ew.images">
+      <HintPath>sage.ew.images.dll</HintPath>
+    </Reference>
+    <Reference Include="sage.ew.reports">
+      <HintPath>sage.ew.reports.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Negocio\Clases\classConfig.cs" />
+    <Compile Include="Negocio\Clases\prof_curso.cs" />
+    <Compile Include="Negocio\Documentos\DocumentoCarga.cs" />
+    <Compile Include="Negocio\Mantes\alumnos.cs" />
+    <Compile Include="Negocio\Mantes\cursos.cs" />
+    <Compile Include="Negocio\Mantes\ManteExtProfesoresAcademia.cs" />
+    <Compile Include="Negocio\Mantes\profesores.cs" />
+    <Compile Include="SageAddons.cs" />
+    <Compile Include="Visual\Forms\frmalumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\frmalumnos.Designer.cs">
+      <DependentUpon>frmalumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Forms\frmcursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\frmcursos.Designer.cs">
+      <DependentUpon>frmcursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Forms\frmDocumentoCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\frmDocumentoCarga.Designer.cs">
+      <DependentUpon>frmDocumentoCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Forms\frmprofesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\frmprofesores.Designer.cs">
+      <DependentUpon>frmprofesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\UserControls\AcademiaPROFESORES.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\browseralumnos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\browsercursos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\browserprofesores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\btBrowDocumentoCarga.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\ListasPreviasDocumentoCarga.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\mantealumnos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\mantecursos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\manteprofesores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\txtalumnos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\txtalumnosDesdeHasta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\txtcursos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\txtcursosDesdeHasta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\txtprofesores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\txtprofesoresDesdeHasta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\usercontrolConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\UserControls\usercontrolConfig.designer.cs">
+      <DependentUpon>usercontrolConfig.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAccess\DA\" />
+    <Folder Include="DataAccess\Interfaces\" />
+    <Folder Include="Negocio\Enums\" />
+    <Folder Include="Negocio\Interficies\" />
+    <Folder Include="Negocio\Listados\" />
+    <Folder Include="sage.ew.reports\personalizados\" />
+    <Folder Include="Visual\Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
+    <Content Include="sage.ew.reports\base\template.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Visual\Forms\frmalumnos.resx">
+      <DependentUpon>frmalumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Forms\frmcursos.resx">
+      <DependentUpon>frmcursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Forms\frmDocumentoCarga.resx">
+      <DependentUpon>frmDocumentoCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Forms\frmprofesores.resx">
+      <DependentUpon>frmprofesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\UserControls\usercontrolConfig.resx">
+      <DependentUpon>usercontrolConfig.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

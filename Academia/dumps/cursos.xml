@@ -1,0 +1,54 @@
+<MantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Nombre>cursos</Nombre>
+  <Titulo>Mantenimiento de cursos</Titulo>
+  <TextoMenu>Cursos</TextoMenu>
+</ManteProperties>
+</MantePropertiesBloc>
+<PaginaMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfPaginaManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PaginaManteProperties>
+    <Nombre>tpGeneral</Nombre>
+    <Titulo>Detalles</Titulo>
+  </PaginaManteProperties>
+</ArrayOfPaginaManteProperties>
+</PaginaMantePropertiesBloc>
+<CodigoNombreMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfCodigoNombreManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CodigoNombreManteProperties>
+    <Nombre>CODIGO</Nombre>
+    <TituloCampo>Código</TituloCampo>
+  </CodigoNombreManteProperties>
+  <CodigoNombreManteProperties>
+    <Nombre>NOMBRE</Nombre>
+    <TituloCampo>Nombre</TituloCampo>
+  </CodigoNombreManteProperties>
+</ArrayOfCodigoNombreManteProperties>
+</CodigoNombreMantePropertiesBloc>
+<ObjectsMantePropertiesBloc>
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfObjectsManteProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectsManteProperties>
+    <Nombre>HORAS</Nombre>
+    <Visible>true</Visible>
+    <NumericUpDownDecimals>6</NumericUpDownDecimals>
+    <NumericUpDownMaximum>999999999</NumericUpDownMaximum>
+    <Top>16</Top>
+    <Left>20</Left>
+    <ControlLeft>100</ControlLeft>
+    <ObjectType>NumericUpDown</ObjectType>
+    <TituloCampo>Horas</TituloCampo>
+  </ObjectsManteProperties>
+  <ObjectsManteProperties>
+    <Nombre>OBSERVACIONES</Nombre>
+    <Visible>true</Visible>
+    <Top>46</Top>
+    <Left>20</Left>
+    <ControlLeft>110</ControlLeft>
+    <TituloCampo>Observaciones</TituloCampo>
+  </ObjectsManteProperties>
+</ArrayOfObjectsManteProperties>
+</ObjectsMantePropertiesBloc>
