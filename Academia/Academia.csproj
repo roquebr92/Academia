@@ -61,6 +61,7 @@
     <Compile Include="Negocio\Clases\classConfig.cs" />
     <Compile Include="Negocio\Clases\prof_curso.cs" />
     <Compile Include="Negocio\Documentos\DocumentoCarga.cs" />
+    <Compile Include="Negocio\Listados\listadoAlumnosPorCurso.cs" />
     <Compile Include="Negocio\Mantes\alumnos.cs" />
     <Compile Include="Negocio\Mantes\cursos.cs" />
     <Compile Include="Negocio\Mantes\ManteExtProfesoresAcademia.cs" />
@@ -147,7 +148,6 @@
     <Folder Include="DataAccess\Interfaces\" />
     <Folder Include="Negocio\Enums\" />
     <Folder Include="Negocio\Interficies\" />
-    <Folder Include="Negocio\Listados\" />
     <Folder Include="sage.ew.reports\personalizados\" />
     <Folder Include="Visual\Reports\" />
   </ItemGroup>
