@@ -41,14 +41,24 @@ namespace sage.addons.Academia.Negocio.Listados
     /// </summary>
     public class listadoAlumnosPorCurso : sage.ew.listados.Clases.Listados
     {
+        private bool _imprimirVertical = false;
         /// <summary>
         /// Definicio del nombre de report a utilizar en la impresión del listado
         /// </summary>
         public override String _ReportFile
         {
             get
-            {
-                return "listadoalumnosporcurso.report";
+            { 
+                    if(_imprimirVertical)
+                {
+                    return "listadoalumnosporcurso1.report";
+                }
+                    else
+                {
+                    return "listadoalumnosporcursoHorizontal1.report";
+                }
+            
+               
             }
         }
 
@@ -58,6 +68,17 @@ namespace sage.addons.Academia.Negocio.Listados
         /// <returns>Datatable con los datos</returns>
         public override DataTable _DataTable()
         {
+            //Las opciones 
+            //lImprimirvertical y nbCursoProfesorcomb
+            _imprimirVertical = _Opcion_Logico("lImprimirvertical");
+            int lnOpcion = _Opcion_Entero("nCursoProfesorcomb");
+            string orderBy = "Order by PROFESORES";
+
+            if(lnOpcion == 0) 
+            {
+                orderBy = "Order by CURSOS";
+            }
+
             DataTable ldtResult = new DataTable();
 
             //leemos los filtos 
@@ -75,7 +96,7 @@ namespace sage.addons.Academia.Negocio.Listados
             left join {DB.SQLDatabase("academia", "profesores")} pro on cab.PROFESORES=pro.CODIGO 
             where 
             1=1{lcFiltros}
-            
+            {orderBy}
             ";
 
             bool ok = DB.SQLExec(sql,ref ldtResult);
