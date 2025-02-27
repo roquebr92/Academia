@@ -97,8 +97,9 @@ namespace sage.addons.Academia.Visual.Forms
             // 
             // ewPanelBorderCabecera._Panel
             // 
-            this.ewPanelBorderCabecera._Panel.Size = new System.Drawing.Size(994, 303);
-            this.ewPanelBorderCabecera.Size = new System.Drawing.Size(996, 305);
+            this.ewPanelBorderCabecera._Panel.Size = new System.Drawing.Size(1326, 373);
+            this.ewPanelBorderCabecera.Margin = new System.Windows.Forms.Padding(15, 12, 15, 12);
+            this.ewPanelBorderCabecera.Size = new System.Drawing.Size(1328, 375);
             // 
             // ewPanelContenido
             // 
@@ -115,7 +116,7 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewPanelContenido.Controls.Add(this.txtCursos);
             this.ewPanelContenido.Controls.Add(this.ewlabelHoras);
             this.ewPanelContenido.Controls.Add(this.ewnumericupdownHoras);
-            this.ewPanelContenido.Size = new System.Drawing.Size(994, 303);
+            this.ewPanelContenido.Size = new System.Drawing.Size(1326, 373);
             this.ewPanelContenido.Controls.SetChildIndex(this.ewnumericupdownHoras, 0);
             this.ewPanelContenido.Controls.SetChildIndex(this.ewlabelHoras, 0);
             this.ewPanelContenido.Controls.SetChildIndex(this.txtCursos, 0);
@@ -135,31 +136,36 @@ namespace sage.addons.Academia.Visual.Forms
             // 
             // lbEnUso
             // 
-            this.lbEnUso.Location = new System.Drawing.Point(888, 3);
+            this.lbEnUso.Location = new System.Drawing.Point(1184, 4);
+            this.lbEnUso.Margin = new System.Windows.Forms.Padding(4);
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(408, 16);
-            this.txtFecha.Size = new System.Drawing.Size(100, 24);
+            this.txtFecha.Location = new System.Drawing.Point(544, 20);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtFecha.Size = new System.Drawing.Size(132, 29);
             this.txtFecha.TabIndex = 5;
             // 
             // ewlabelFecha
             // 
-            this.ewlabelFecha.Location = new System.Drawing.Point(308, 19);
+            this.ewlabelFecha.Location = new System.Drawing.Point(411, 23);
+            this.ewlabelFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelFecha.TabIndex = 4;
             // 
             // mantegridLinies
             // 
-            this.mantegridLinies.Size = new System.Drawing.Size(992, 214);
+            this.mantegridLinies.Margin = new System.Windows.Forms.Padding(5);
+            this.mantegridLinies.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.mantegridLinies.Size = new System.Drawing.Size(1323, 263);
             // 
             // ewpanelLineas
             // 
-            this.ewpanelLineas.Location = new System.Drawing.Point(8, 399);
-            this.ewpanelLineas.Size = new System.Drawing.Size(996, 218);
+            this.ewpanelLineas.Location = new System.Drawing.Point(11, 491);
+            this.ewpanelLineas.Size = new System.Drawing.Size(1328, 268);
             // 
             // ewpanelLineasInterior
             // 
-            this.ewpanelLineasInterior.Size = new System.Drawing.Size(994, 217);
+            this.ewpanelLineasInterior.Size = new System.Drawing.Size(1325, 267);
             // 
             // ewpanelCabecera
             // 
@@ -174,14 +180,22 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewtabcontrolLineas._PropiedadesDeEstilos._ColorUnderlineEntering = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(192)))), ((int)(((byte)(163)))));
             this.ewtabcontrolLineas._PropiedadesDeEstilos._ColorUnderlineSelected = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(0)))));
             // 
+            // tabPageLineas
+            // 
+            this.tabPageLineas.Location = new System.Drawing.Point(4, 29);
+            this.tabPageLineas.Margin = new System.Windows.Forms.Padding(5);
+            this.tabPageLineas.Padding = new System.Windows.Forms.Padding(5);
+            this.tabPageLineas.Size = new System.Drawing.Size(1308, 467);
+            // 
             // ewlabelNumero
             // 
             this.ewlabelNumero._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
             this.ewlabelNumero.AutoSize = true;
             this.ewlabelNumero.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewlabelNumero.Location = new System.Drawing.Point(20, 19);
+            this.ewlabelNumero.Location = new System.Drawing.Point(27, 23);
+            this.ewlabelNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelNumero.Name = "ewlabelNumero";
-            this.ewlabelNumero.Size = new System.Drawing.Size(59, 17);
+            this.ewlabelNumero.Size = new System.Drawing.Size(71, 21);
             this.ewlabelNumero.TabIndex = 1;
             this.ewlabelNumero.Text = "Número:";
             // 
@@ -204,10 +218,11 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewtextboxNumero._Tooltip = "";
             this.ewtextboxNumero._UsuarioPermiteConfigUser = false;
             this.ewtextboxNumero.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewtextboxNumero.Location = new System.Drawing.Point(120, 16);
+            this.ewtextboxNumero.Location = new System.Drawing.Point(160, 20);
+            this.ewtextboxNumero.Margin = new System.Windows.Forms.Padding(4);
             this.ewtextboxNumero.MaxLength = 0;
             this.ewtextboxNumero.Name = "ewtextboxNumero";
-            this.ewtextboxNumero.Size = new System.Drawing.Size(100, 24);
+            this.ewtextboxNumero.Size = new System.Drawing.Size(132, 29);
             this.ewtextboxNumero.TabIndex = 2;
             // 
             // ewlabelCliente
@@ -215,9 +230,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewlabelCliente._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
             this.ewlabelCliente.AutoSize = true;
             this.ewlabelCliente.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewlabelCliente.Location = new System.Drawing.Point(149, 75);
+            this.ewlabelCliente.Location = new System.Drawing.Point(199, 92);
+            this.ewlabelCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelCliente.Name = "ewlabelCliente";
-            this.ewlabelCliente.Size = new System.Drawing.Size(50, 17);
+            this.ewlabelCliente.Size = new System.Drawing.Size(61, 21);
             this.ewlabelCliente.TabIndex = 6;
             this.ewlabelCliente.Text = "Cliente:";
             // 
@@ -246,10 +262,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.txtCliente._Tipo_Visual = sage.ew.txtbox.UserControls.ewtxtcodlabel._Tipos_Visuales.Estandar;
             this.txtCliente._UsuarioPermiteConfigUser = false;
             this.txtCliente.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtCliente.Location = new System.Drawing.Point(249, 72);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCliente.Location = new System.Drawing.Point(332, 89);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(371, 25);
+            this.txtCliente.Size = new System.Drawing.Size(495, 30);
             this.txtCliente.TabIndex = 7;
             // 
             // ewlabelProfesores
@@ -257,9 +273,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewlabelProfesores._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
             this.ewlabelProfesores.AutoSize = true;
             this.ewlabelProfesores.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewlabelProfesores.Location = new System.Drawing.Point(149, 105);
+            this.ewlabelProfesores.Location = new System.Drawing.Point(199, 129);
+            this.ewlabelProfesores.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelProfesores.Name = "ewlabelProfesores";
-            this.ewlabelProfesores.Size = new System.Drawing.Size(74, 17);
+            this.ewlabelProfesores.Size = new System.Drawing.Size(87, 21);
             this.ewlabelProfesores.TabIndex = 8;
             this.ewlabelProfesores.Text = "Profesores:";
             // 
@@ -268,9 +285,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewlabelCursos._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
             this.ewlabelCursos.AutoSize = true;
             this.ewlabelCursos.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewlabelCursos.Location = new System.Drawing.Point(149, 135);
+            this.ewlabelCursos.Location = new System.Drawing.Point(199, 166);
+            this.ewlabelCursos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelCursos.Name = "ewlabelCursos";
-            this.ewlabelCursos.Size = new System.Drawing.Size(51, 17);
+            this.ewlabelCursos.Size = new System.Drawing.Size(61, 21);
             this.ewlabelCursos.TabIndex = 10;
             this.ewlabelCursos.Text = "Cursos:";
             // 
@@ -279,9 +297,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewlabelHoras._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
             this.ewlabelHoras.AutoSize = true;
             this.ewlabelHoras.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewlabelHoras.Location = new System.Drawing.Point(149, 165);
+            this.ewlabelHoras.Location = new System.Drawing.Point(199, 203);
+            this.ewlabelHoras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelHoras.Name = "ewlabelHoras";
-            this.ewlabelHoras.Size = new System.Drawing.Size(46, 17);
+            this.ewlabelHoras.Size = new System.Drawing.Size(54, 21);
             this.ewlabelHoras.TabIndex = 12;
             this.ewlabelHoras.Text = "Horas:";
             // 
@@ -303,14 +322,15 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewnumericupdownHoras.BackColor = System.Drawing.SystemColors.Window;
             this.ewnumericupdownHoras.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.ewnumericupdownHoras.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ewnumericupdownHoras.Location = new System.Drawing.Point(249, 162);
+            this.ewnumericupdownHoras.Location = new System.Drawing.Point(332, 199);
+            this.ewnumericupdownHoras.Margin = new System.Windows.Forms.Padding(4);
             this.ewnumericupdownHoras.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
             this.ewnumericupdownHoras.Name = "ewnumericupdownHoras";
-            this.ewnumericupdownHoras.Size = new System.Drawing.Size(57, 24);
+            this.ewnumericupdownHoras.Size = new System.Drawing.Size(76, 29);
             this.ewnumericupdownHoras.TabIndex = 13;
             this.ewnumericupdownHoras.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ewnumericupdownHoras.Value = new decimal(new int[] {
@@ -324,9 +344,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewlabelNumeroalbaran._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
             this.ewlabelNumeroalbaran.AutoSize = true;
             this.ewlabelNumeroalbaran.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewlabelNumeroalbaran.Location = new System.Drawing.Point(47, 34);
+            this.ewlabelNumeroalbaran.Location = new System.Drawing.Point(63, 42);
+            this.ewlabelNumeroalbaran.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelNumeroalbaran.Name = "ewlabelNumeroalbaran";
-            this.ewlabelNumeroalbaran.Size = new System.Drawing.Size(108, 17);
+            this.ewlabelNumeroalbaran.Size = new System.Drawing.Size(129, 21);
             this.ewlabelNumeroalbaran.TabIndex = 14;
             this.ewlabelNumeroalbaran.Text = "Número Albarán:";
             // 
@@ -349,10 +370,11 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewtextboxNumeroalbaran._Tooltip = "";
             this.ewtextboxNumeroalbaran._UsuarioPermiteConfigUser = false;
             this.ewtextboxNumeroalbaran.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewtextboxNumeroalbaran.Location = new System.Drawing.Point(168, 31);
+            this.ewtextboxNumeroalbaran.Location = new System.Drawing.Point(224, 38);
+            this.ewtextboxNumeroalbaran.Margin = new System.Windows.Forms.Padding(4);
             this.ewtextboxNumeroalbaran.MaxLength = 0;
             this.ewtextboxNumeroalbaran.Name = "ewtextboxNumeroalbaran";
-            this.ewtextboxNumeroalbaran.Size = new System.Drawing.Size(100, 24);
+            this.ewtextboxNumeroalbaran.Size = new System.Drawing.Size(132, 29);
             this.ewtextboxNumeroalbaran.TabIndex = 15;
             // 
             // ewlabelSerie
@@ -360,9 +382,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewlabelSerie._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
             this.ewlabelSerie.AutoSize = true;
             this.ewlabelSerie.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewlabelSerie.Location = new System.Drawing.Point(47, 64);
+            this.ewlabelSerie.Location = new System.Drawing.Point(63, 79);
+            this.ewlabelSerie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelSerie.Name = "ewlabelSerie";
-            this.ewlabelSerie.Size = new System.Drawing.Size(40, 17);
+            this.ewlabelSerie.Size = new System.Drawing.Size(48, 21);
             this.ewlabelSerie.TabIndex = 16;
             this.ewlabelSerie.Text = "Serie:";
             // 
@@ -385,10 +408,11 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewtextboxSerie._Tooltip = "";
             this.ewtextboxSerie._UsuarioPermiteConfigUser = false;
             this.ewtextboxSerie.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewtextboxSerie.Location = new System.Drawing.Point(168, 61);
+            this.ewtextboxSerie.Location = new System.Drawing.Point(224, 75);
+            this.ewtextboxSerie.Margin = new System.Windows.Forms.Padding(4);
             this.ewtextboxSerie.MaxLength = 0;
             this.ewtextboxSerie.Name = "ewtextboxSerie";
-            this.ewtextboxSerie.Size = new System.Drawing.Size(100, 24);
+            this.ewtextboxSerie.Size = new System.Drawing.Size(132, 29);
             this.ewtextboxSerie.TabIndex = 17;
             // 
             // ewlabelEjercicioalbaran
@@ -396,9 +420,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewlabelEjercicioalbaran._Localizacion = sage.ew.interficies.LocalizacionOpcion.Bottom;
             this.ewlabelEjercicioalbaran.AutoSize = true;
             this.ewlabelEjercicioalbaran.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewlabelEjercicioalbaran.Location = new System.Drawing.Point(47, 94);
+            this.ewlabelEjercicioalbaran.Location = new System.Drawing.Point(63, 116);
+            this.ewlabelEjercicioalbaran.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ewlabelEjercicioalbaran.Name = "ewlabelEjercicioalbaran";
-            this.ewlabelEjercicioalbaran.Size = new System.Drawing.Size(108, 17);
+            this.ewlabelEjercicioalbaran.Size = new System.Drawing.Size(128, 21);
             this.ewlabelEjercicioalbaran.TabIndex = 18;
             this.ewlabelEjercicioalbaran.Text = "Ejercicio Albarán:";
             // 
@@ -421,10 +446,11 @@ namespace sage.addons.Academia.Visual.Forms
             this.ewtextboxEjercicioalbaran._Tooltip = "";
             this.ewtextboxEjercicioalbaran._UsuarioPermiteConfigUser = false;
             this.ewtextboxEjercicioalbaran.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ewtextboxEjercicioalbaran.Location = new System.Drawing.Point(168, 91);
+            this.ewtextboxEjercicioalbaran.Location = new System.Drawing.Point(224, 112);
+            this.ewtextboxEjercicioalbaran.Margin = new System.Windows.Forms.Padding(4);
             this.ewtextboxEjercicioalbaran.MaxLength = 0;
             this.ewtextboxEjercicioalbaran.Name = "ewtextboxEjercicioalbaran";
-            this.ewtextboxEjercicioalbaran.Size = new System.Drawing.Size(100, 24);
+            this.ewtextboxEjercicioalbaran.Size = new System.Drawing.Size(132, 29);
             this.ewtextboxEjercicioalbaran.TabIndex = 19;
             // 
             // btOpciones
@@ -440,9 +466,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.btOpciones.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btOpciones.Image = ((System.Drawing.Image)(resources.GetObject("btOpciones.Image")));
             this.btOpciones.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btOpciones.Location = new System.Drawing.Point(222, 2);
+            this.btOpciones.Location = new System.Drawing.Point(296, 2);
+            this.btOpciones.Margin = new System.Windows.Forms.Padding(4);
             this.btOpciones.Name = "btOpciones";
-            this.btOpciones.Size = new System.Drawing.Size(70, 55);
+            this.btOpciones.Size = new System.Drawing.Size(93, 68);
             this.btOpciones.TabIndex = 4;
             this.btOpciones.Text = "Opciones";
             this.btOpciones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -458,9 +485,11 @@ namespace sage.addons.Academia.Visual.Forms
             this.groupBox1.Controls.Add(this.ewtextboxSerie);
             this.groupBox1.Controls.Add(this.ewlabelSerie);
             this.groupBox1.Controls.Add(this.ewtextboxNumeroalbaran);
-            this.groupBox1.Location = new System.Drawing.Point(624, 120);
+            this.groupBox1.Location = new System.Drawing.Point(832, 148);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(315, 156);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(420, 192);
             this.groupBox1.TabIndex = 81;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Albarán";
@@ -474,9 +503,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.btn_albaran.BackColor = System.Drawing.Color.LimeGreen;
             this.btn_albaran.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.btn_albaran.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_albaran.Location = new System.Drawing.Point(626, 73);
+            this.btn_albaran.Location = new System.Drawing.Point(835, 90);
+            this.btn_albaran.Margin = new System.Windows.Forms.Padding(4);
             this.btn_albaran.Name = "btn_albaran";
-            this.btn_albaran.Size = new System.Drawing.Size(313, 41);
+            this.btn_albaran.Size = new System.Drawing.Size(417, 50);
             this.btn_albaran.TabIndex = 82;
             this.btn_albaran.Text = "Ver / Generar albarán";
             this.btn_albaran.UseVisualStyleBackColor = false;
@@ -498,10 +528,11 @@ namespace sage.addons.Academia.Visual.Forms
             this.btBrowDocumentoCarga1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBrowDocumentoCarga1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.btBrowDocumentoCarga1.Image = ((System.Drawing.Image)(resources.GetObject("btBrowDocumentoCarga1.Image")));
-            this.btBrowDocumentoCarga1.Location = new System.Drawing.Point(226, 16);
+            this.btBrowDocumentoCarga1.Location = new System.Drawing.Point(301, 20);
+            this.btBrowDocumentoCarga1.Margin = new System.Windows.Forms.Padding(4);
             this.btBrowDocumentoCarga1.Name = "btBrowDocumentoCarga1";
             this.btBrowDocumentoCarga1.NombreMantenimiento = "";
-            this.btBrowDocumentoCarga1.Size = new System.Drawing.Size(26, 26);
+            this.btBrowDocumentoCarga1.Size = new System.Drawing.Size(35, 32);
             this.btBrowDocumentoCarga1.TabIndex = 3;
             this.btBrowDocumentoCarga1.TabStop = false;
             this.btBrowDocumentoCarga1.UseVisualStyleBackColor = true;
@@ -530,10 +561,10 @@ namespace sage.addons.Academia.Visual.Forms
             this.txtProfesores._Tipo_Visual = sage.ew.txtbox.UserControls.ewtxtcodlabel._Tipos_Visuales.Estandar;
             this.txtProfesores._UsuarioPermiteConfigUser = false;
             this.txtProfesores.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtProfesores.Location = new System.Drawing.Point(249, 102);
-            this.txtProfesores.Margin = new System.Windows.Forms.Padding(2);
+            this.txtProfesores.Location = new System.Drawing.Point(332, 126);
+            this.txtProfesores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProfesores.Name = "txtProfesores";
-            this.txtProfesores.Size = new System.Drawing.Size(259, 25);
+            this.txtProfesores.Size = new System.Drawing.Size(345, 30);
             this.txtProfesores.TabIndex = 9;
             // 
             // txtCursos
@@ -560,18 +591,19 @@ namespace sage.addons.Academia.Visual.Forms
             this.txtCursos._Tipo_Visual = sage.ew.txtbox.UserControls.ewtxtcodlabel._Tipos_Visuales.Estandar;
             this.txtCursos._UsuarioPermiteConfigUser = false;
             this.txtCursos.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtCursos.Location = new System.Drawing.Point(249, 132);
-            this.txtCursos.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCursos.Location = new System.Drawing.Point(332, 162);
+            this.txtCursos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCursos.Name = "txtCursos";
-            this.txtCursos.Size = new System.Drawing.Size(259, 25);
+            this.txtCursos.Size = new System.Drawing.Size(345, 30);
             this.txtCursos.TabIndex = 11;
             // 
             // frmDocumentoCarga
             // 
             this._MostrarAccesoFavoritos = false;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 626);
+            this.ClientSize = new System.Drawing.Size(1351, 770);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmDocumentoCarga";
             this.ShowIcon = false;
             this.Text = "Nuevo documento";
